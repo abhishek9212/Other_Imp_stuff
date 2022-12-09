@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> <!--The web font here we are importing from Google-->
+    <style>
+        p{
+            font-family:'Festive','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,'cursive'; /* This font stack means that if the first is not available look for the second one and then if that is not there look for third and so on ..*/
+            font-size: 33px;  /* 1 Pixel = 1/96th of an inch */
+            line-height: 1.3em;  /*Font ke upar koi font hai to uske beech ki spacing is line height. em means parent ke font size ka kinta guna. Here it's 8.3 times*/
+            
+        }  
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    <p>Let's play with <span>Fonts</span>. It is very exciting</p>
+</body>
+</html>
+
+
+<!--Web safe fonts are those which come with the Operating system when it is installed. Like cursive etc.
+Web Font are those which we need to import and we don't get them with the Operating system.-->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <style>
+        p{
+            color:rgb(206, 135, 94);
+            background-color: seagreen !important;   
+        }  
+    </style>  <!--This is Internal CSS. By writing !important we have given Internal CSS priority over the External CSS that is written after this as it will now not be overwrited.-->
+    <link rel="stylesheet" href="tut13.css"> <!--This is External CSS. This will get the content inside tut13.css here-->
+</head>
+<body>
+    <h3>This is CSS tutorial</h3>
+    <!-- <p style= "color:red; background-color: yellow;">This tutorial will teach you everything you need to know about HTML/CSS</p> -->  <!--This is Inline CSS-->
+    <p>This tutorial will teach you everything you need to know about HTML/CSS</p>
+</body>
+</html>
+
+<!-- Inline CSS gets more priority over Internal and External CSS. In external and internal CSS the one that's written after the another gets more priority as the content in it overwrites the content in the old one. -->

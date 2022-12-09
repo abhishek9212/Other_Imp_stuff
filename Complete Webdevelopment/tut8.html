@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Name: </label> <!--If we write Name: like this in label, then when we click on Name we automatically get redirected to name box and Cursor will be present there. whatever we have given in the id attribute of that input tag, that we give here in for= -->
+        <div>   <!--To get role into a new line we should use div tags here.-->
+            <input type="text" name="myName" id="name">  <!--Input tags are the ones used for user input-->
+        </div> 
+        <br> <!--br is not recommended here. For now we're using it but later we're going to use CSS for all these things-->
+        <div>  <!--Input is an inline element and div is a block element so div takes an entire block(row) and next element has to go to the new line.-->
+            Role: <input type="text" name="myRole">   
+        </div>
+        <br>
+        <div> 
+            Email: <input type="email" name="myEmail">  <!--Name is that name by which our backend will recognize this tag. Like, here we're inserting our data in backend.php then it must know what is what. And by this it will understand that myEmail is this tag.-->
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate" >  <!--for date-->
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus" >  <!--We can't insert any text here because type is number. We can only insert number and e for numbers. Like for 10 to power 6 we can use e6-->
+        </div>
+        <br>
+        <label for="EligibilityCriteria"> Are you Eligible?: </label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="EligibilityCriteria" checked>  <!--By default if we want our checkbox to be checked then we can use checked here-->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender" > Female <input type="radio" name="myGender" >  Other <input type="radio" name="myGender" > <!--We can only select one out of the three because we have given same name to all of these i.e. myGender-->
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea> <!--Textarea is an HTML tag used to take big paragraphs as an input from user.-->
+        </div>
+
+        <br>
+        <div>
+            <label for="car"> Car </label> 
+            <select name="myCar" id="car">
+                <option value="Ind">Indica</option>  <!--options come under select. If we want some option to be selected by default, then we can write selected here.-->
+                <option value="swf" selected>Swift</option>  
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">  <!--To submit our form-->
+            <input type="reset" value="Reset Now">  <!--To reset our form-->
+        </div>
+
+    </form>  <!--We'll use a backend here. We'll give our form to a backend. Now, if we're using php as a backend, then we'll say go to backend.php and submit this data there. This action is nothing but an endpoint where all the data of our form gets submitted.-->
+</body>
+</html>
+
+
+<!-- Because there is no backend.php that's why it's giving an error while trying to insert the content after redirecting to backend.php. The URL contains all values : http://127.0.0.1:5501/backend.php?myName=Abhishek&myRole=Programmer&myEmail=abhishekyadav2498%40gmail.com. -->
+
+<!--  HTML VALUE ATTRIBUTE in OPTION TAG
+The value attribute specifies the value to be sent to a server when a form is submitted.
+
+The content between the opening <option> and closing </option> tags is what the browsers will display in a drop-down list. However, the value of the value attribute is what will be sent to the server when a form is submitted.
+
+Note: If the value attribute is not specified, the content will be passed as a value instead. -->

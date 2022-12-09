@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDs and Classes in HTML</title>
+</head>
+<body>
+    <h3>IDs and Classes tutorial</h3> 
+    <div id="mainBox" class="redBg blackBorder">  <!--id is basically a name(identifier). Now, here on same page on the same website there can't be two elements(tags) with same name. Like if in the h3 above we write id="mainBox", then it is wrong. In future if we write Javascript for example then we can grab this element by it's ID and then do required changes in it.-->
+        This is mainBox
+    </div>
+    <span class="redBg"></span>
+    <!-- Emmet -->
+    <!-- . is for class and # is for ID -->
+    <span class="redBG"></span>  <!--write span.redBg for this-->
+    <span id="mainSpan"></span>  <!--write span#mainSpan for this-->
+    <div class="redBg blackBorder anotherClass"></div> <!--write div.redBg.blackBorder.anotherClass for this-->
+
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>  <!--write .blackBackground for this-->
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3 + <Tab>/Enter  -->
+    <span class="myClass myClass2 myClass3"></span>
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab>/Enter to print 4 similar elements using Emmet  -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+
+</body>
+</html>
+
+<!-- Class -->
+<!-- Let's say we have 100 elements in our website and we want to give all of them RED color, then either we can define style for all those 100 elements OR Instead of repeating it for all the elements we can create a class redBg and define all the properties that we want in it(ex - content black, background - red etc.). Now, whenever we'll give this class to any element then all the properties will be there in that element. -->
+
+<!-- There can be only 1 ID in an element and 1 ID can be linked to only 1 element. But we can attach multiple classes to an element and also we can attach one class to multiple elements. -->

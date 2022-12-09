@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="container">
+        <p>This is another        paragraph</p>  <!--These spaces will get chopped OFF and HTML will consider this as a single space. If we want to use these spaces then we would have to use HTML entities.-->
+    </div>
+    <div class="container">
+        <p>This is ANOTHER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph with five spaces</p> <!--Here we have used nbsp; which is non breaking space. But this is not recommended for multiple spaces as we'll use margin, padding etc. and other CSS selectors and properties for this purpose.-->
+        <p>Paragraph is written like this &lt;p&gt; </p>  <!--If we want to write <p> in a paragraph.-->
+        <p>Pound is written like this &pound;</p>
+        <p>Copyright is written like this &copy;</p>
+        <p>Another character is &rAarr;</p>
+        <p>Another character is &frac14;</p>
+        <p>Empty character is written like this &#8203;</p> <!--We can send this empty character as a message on websites like Whatsapp which does not allow to send empty messages. We can simply generate it using HTML and copy paste it.-->
+    </div>  
+</body>
+</html>
+
+
+<!-- HTML Entities are used when we want to write something to be displayed and which is a reserved character. -->

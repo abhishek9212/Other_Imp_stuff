@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+        #firstPara{
+            color:blueviolet;  /* Color by name */
+        }
+
+        #secondPara{
+            color:rgb(223, 130, 54);  /* Color by rgb function OR color by rgb value, all three color arguments have values ranging from 0 to 255 */
+        }
+
+        #thirdPara{
+            color: #08075e; /* Color in hex format OR color by hex value, here 34 maps to 'r', b4 maps to 'g' and eb maps with 'b'. So, this is basically rgb only.*/
+            background-color: rgb(72, 204, 236);
+        }
+    </style>
+</head>
+<body>
+    <h2>This is my First box</h2>
+    <p id="firstPara">This is a paragraph from first box</p>
+
+    <h2>This is my First box</h2>
+    <p id="secondPara">This is a paragraph from second box</p>
+
+    <h2>This is my First box</h2>
+    <p id="thirdPara">This is a paragraph from third box</p>
+</body>
+</html>
