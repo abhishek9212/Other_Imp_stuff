@@ -1,3 +1,5 @@
+# A tuple is a collection which is ordered and unchangeable.
+
 # Creating a tuple using ()
 t = (1, 2, 4, 5)
 

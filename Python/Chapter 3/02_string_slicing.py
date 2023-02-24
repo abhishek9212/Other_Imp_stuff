@@ -16,6 +16,7 @@
 # print(c)
 
 name = "HarryIsGood"
-d = name[0::3]
+d = name[0::3]  # <start: stop : step>
+# d = name[0:6]
 print(d)
 

@@ -1,0 +1,235 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\normalsize{
+	{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+	\item\normalsize{
+    	{#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  	\textbf{#1} & \textbf{\normalsize #2} \\
+  	\textit{\normalsize#3} & \textit{\normalsize #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  	\textit{\normalsize#1} & \textit{\normalsize #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+  	\normalsize#1 & \textbf{\normalsize #4}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	{\Huge \scshape Abhishek Yadav} \\ \vspace{1pt}
+	Lakhimpur Kheri, Uttar Pradesh \\ \vspace{1pt}
+	\normalsize \raisebox{-0.1\height}\faPhone\ +91 8766890250 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{abhishekyadav2498@gmail.com}} ~ \\
+	\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/abhishek-yadav-58160120b/}}
+	\vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+  	{Army Institute of Technology, Pune}{July 2016 - June 2020}
+  	{Bachelor of Engineering in Electronics and Telecommunication Engineering(7.12 CGPA)}{Maharashtra, India}
+   \resumeSubheading
+  	{Army Public School, Delhi Cantt}{Apr 2015 - Mar 2016}
+  	{Physics, Chemistry, Maths, English, Computer Science(82.4 Percent)}{Delhi, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+  	{Amdocs DVCI}{July 2020 - Present}
+  	{Software Developer}{Pune, India}
+  	\resumeItemListStart
+    	\resumeItem{Designed and developed software solutions in telecom Revenue management domain with good Experience in development, testing and debugging. Also having a decent experience of Working in multiple projects and client interaction.}
+    	\resumeItem{Tech stack used: Unix, Shell Scripting, C/C++(OOPs), SQL, Data Structures}
+	\resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+	\vspace{-5pt}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+      	{\textbf{XL Axiata, Three UK, True Move} $|$ \emph{Unix, Shell Scripting, C/C++, Data Structures} $$ {}}{}
+      	\resumeItemListStart
+        	\resumeItem{Handling the design and development of application in Amdocs Billing. Continously interacting with Customer for enhanced experience.}
+        	\resumeItem{Experience in design, development, testing and debugging.}
+      	\resumeItemListEnd
+       
+	\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------Achievements-----------
+\section{Certifications and Achievements}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+	\resumeItemListStart
+    	\resumeItem{AWS Certified Cloud Practitioner}
+     \resumeItem{Secured Third Position in All India Inter University Men's Squash Tournament held at Manipal University Jaipur in feb 2020}
+  	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %
+% %-----------Profile Links-----------
+% \section{Profile Links}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+% 	\resumeItemListStart
+%     	\resumeItem {\href{https://leetcode.com/striver_79/}{Leetcode}}
+%   	\resumeItemListEnd
+%  \end{itemize}
+%  \vspace{-16pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+	\resumeItemListStart
+    	\resumeItem{\textbf{Languages}} \\
+     \vspace{1.8pt}
+            {Advance: }{C++} \\
+            {Intermediate: }{Python} \\
+            {Novice: }{Java} \\
+            \resumeItem{\textbf{Data Structures and Algorithms}} \\
+     \vspace{0.5pt}
+            \resumeItem{\textbf{Tools}} \\
+            \vspace{1.8pt}
+            {Git, JIRA, Perforce, Unix}
+            \resumeItem{\textbf{Technologies}} \\
+            \vspace{1.8pt}
+            {Shell Scripting, SQL, HTML, CSS}
+            \resumeItem{\textbf{Other tools}} \\
+            \vspace{1.8pt}
+            {Beyond Compare, Ultra Edit, Notepad++, MS Word, Excel}
+  	\resumeItemListEnd
+ \end{itemize}
+
+
+ \section{Hobbies and Interests}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+	\resumeItemListStart
+    	\resumeItem{Problem Solving - \href{https://leetcode.com/DontPeek_4538/}{Leetcode}} 
+            \resumeItem{Chess}
+            \resumeItem{Singing}
+  	\resumeItemListEnd
+ \end{itemize}
+
+
+ \section{Languages}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+	\resumeItemListStart
+    	\resumeItem{English}
+            \resumeItem{Hindi}
+  	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
+
+
